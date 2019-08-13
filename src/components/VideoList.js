@@ -7,7 +7,7 @@ const VideoList = ({ videos, onVideoSelect }) => {
 
     const listOfVideos = videos.map((video, index) => {
         return (
-            <Grid item xs={12} key={index} >
+            <Grid item xs={12} key={index} style={{ backgroundColor: '#333333' }}>
                 <Paper style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }} onClick={() => onVideoSelect(video)}>
                     <img
                         src={video.snippet.thumbnails.medium.url}
